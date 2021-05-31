@@ -20,5 +20,12 @@ print(car_2.model) #Mustang
 print(car_2.year) #2022
 print(car_2.color) #red
 
+print(car_2.wheels) #4
+print(Car.wheels) #4
+
+#Car.wheels = 2
+#change all instances of cars
+#so that car_1.wheels = 2 and car_2.wheels = 2 too.
+
 car_2.drive() #This Mustang is driving
 car_2.stop() #This Mustang is stopping

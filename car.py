@@ -1,5 +1,9 @@
 class Car:
 #Defined object car factory (also called blueprint): Car.
+
+    wheels = 4  # Class variable
+    # such that, you could use something.wheels() = 4
+
     def __init__(self, make, model, year, color):
         #define attributes - what the object is/has
         self.make = make #This shows how to assign functions/orders for the function call
