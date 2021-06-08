@@ -15,7 +15,6 @@ def click():
 
     messagebox.showerror(title="error box",
                          message="Something is wrong")
-
     if messagebox.askokcancel(title="ask ok cancel",
                               message="do you want to do the thing"):
         print("You did a thing!")
@@ -40,6 +39,18 @@ def click():
         print("I like pie too!")
     else:
         print("Why do you not like pie?")
+
+    answer = messagebox.askyesnocancel(title="Yes no cancel",
+                                       message="Do you like to code?",
+                                       icon="info"
+                                       #the icon could be info, warning or error etc.
+                                       )
+    if answer:
+        print("You like to code")
+    elif not answer:
+        print("You don't like to code")
+    else:
+        print("You canceled")
 
 
 button = Button(window,
