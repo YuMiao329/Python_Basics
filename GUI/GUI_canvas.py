@@ -59,13 +59,15 @@ canvas_poke.create_arc(0, 0,
                        start=180,
                        width=10)
 # oval middle part
-canvas_poke.create_oval(190, 190,
-                        310, 310,
-                        fill="white",
-                        width=10)
+oval_shape = canvas_poke.create_oval(190, 190,
+                                     310, 310,
+                                     fill="white",
+                                     width=10)
+print(canvas.coords(oval_shape))
+# here will print the coordinate of the oval shape
 
 canvas_poke.pack()
-#-----------------------------------------------------
+# -----------------------------------------------------
 notebook.pack(expand=True)
 # ----------------------------------------------------
 window.mainloop()

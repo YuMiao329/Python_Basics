@@ -403,8 +403,8 @@ shutil.copyfile(text_path, 'test.txt')  # src, dst
 import os
 import shutil
 
-source = 'test'
-destination = 'C:\\Users\\yum\\Desktop\\test'
+source = 'py_to_exe.py'
+destination = 'D:\\Python_Basics\\py_to_exe\\py_to_exe.py'
 
 try:
     if os.path.exists(destination):
